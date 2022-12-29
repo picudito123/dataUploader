@@ -13,6 +13,7 @@ if (isset($_FILES['mi-archivo'])) {
   <html>
   <head>
    <meta charset="UTF-8">
+   <meta property="og:image" content="'.$src.'" />
    <meta name="description" content="Fran_afp_ file uploader">
    <meta name="keywords" content="Uploader">
    <meta name="author" content="Fran_afp_">
