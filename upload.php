@@ -6,6 +6,8 @@ if (isset($_FILES['mi-archivo'])) {
   $ruta_provisional = $archivo['tmp_name'];
   $size = $archivo['size'];
   $carpeta = 'cdn/';
+  $info = pathinfo($archivo);
+  $prefijo = $info['extension'];
   $src = $carpeta.$nombre;
   move_uploaded_file($ruta_provisional, $src);
   $nombre_sin_prefijo = pathinfo($nombre, PATHINFO_FILENAME);
